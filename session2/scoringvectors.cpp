@@ -29,21 +29,15 @@ int main (){
 		median = (v[middle-1] + v[middle])/2;
 	cout << "Median = " << median << '\n';
 
-	// add the numbers together and divide by how many there are - Average
-	for (vector<double>::size_type i = 0; i < n; i++){ // ask the compiler what they type should be
-		sum = sum + v[i];
-	}
-	cout << "Average " << sum / n << endl; 
-
-
 	// Find average after taking out the highest and the lowest numbers in the vector
 	
 	
-	for (vector<double>::size_type i = 0; i < n; i++){ 
-		sum = sum + v[i];
+	sort (v.begin(), v.end());
+	double sum = 0;
+	for (vector<double>::size_type n; i = 1; i < v.size - 1; i++){
+		sum = sum + 1;
+		cout << "Scoring Average "<< sum / n -2 << endl;
 	}
-
-
 
 	return 0;
 }
